@@ -3819,7 +3819,7 @@ local function v4346(v1127, v1128) --[[ Line: 3102 ]] --[[ Name: decompile_bytec
 	end;
 	l_prefix_information_0 = l_prefix_information_1;
 	if string.byte(v1127, 1, 1) == 0 then
-		local v1138 = ("-- Successfully decompiled with NiggaKernel" .. "\nDecompiler made by plusgiant5 (Konstant), https://discord.gg/tm5t4Zm3):format("2.1");
+		local v1138 = string.format("-- Successfully decompiled with NiggaKernel\nDecompiler made by plusgiant5 (Konstant), https://discord.gg/tm5t4Zm3: %s", "2.1")
 		if type(v1127) ~= "string" and l_getscripthash_0 then
 			v1138 = v1138 .. ("-- Script hash: %*\n"):format((string.upper(l_getscripthash_0(v1127))));
 		end;
