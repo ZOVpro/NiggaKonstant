@@ -13989,7 +13989,7 @@ local function v4346(v1127, v1128) --[[ Line: 3102 ]] --[[ Name: decompile_bytec
 			end;
 			v1130:end_benchmark("Smart Naming");
 			v1130:start_benchmark("Global AST To String");
-			local v3943 = ("-- Decompiled with Konstant V%*, a fast Luau decompiler made in Luau by plusgiant5\n"):format("2.1");
+			local v3943 = ("-- Successfully decompiled with NiggaKernel\nDecompiler made by plusgiant5 (Konstant), https://discord.gg/tm5t4Zm3\n"):format("2.1");
 			if type(v1127) ~= "string" and l_getscripthash_0 then
 				v3943 = v3943 .. ("-- Script hash: %*\n"):format((string.upper(l_getscripthash_0(v1127))));
 			end;
