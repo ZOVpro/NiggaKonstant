@@ -89,7 +89,7 @@ local v29 = l_rconsoleprint_0 or print;
 local function v33(v30, v31, v32) --[[ Line: 271 ]] --[[ Name: anti_freeze ]]
 	-- upvalues: v26 (copy), v27 (ref), v29 (copy), v23 (copy), v28 (copy)
 	if v26() - v27 >= 0.016666666666666666 then
-		v29("[" .. v30 .. "/" .. v31 .. "] " .. string.format("%.1f", math.floor(v30 / v31 * 1000 + 0.5) / 10) .. "% done with func `" .. (v32 or "<main>") .. "`");
+	--	info("[" .. v30 .. "/" .. v31 .. "] " .. string.format("%.1f", math.floor(v30 / v31 * 1000 + 0.5) / 10) .. "% done with func `" .. (v32 or "<main>") .. "`");
 		if v23 and v28 then
 			v23();
 		end;
@@ -3816,7 +3816,7 @@ local function v4346(v1127, v1128) --[[ Line: 3102 ]] --[[ Name: decompile_bytec
 	end;
 	l_prefix_information_0 = l_prefix_information_1;
 	if string.byte(v1127, 1, 1) == 0 then
-		local v1138 = string.format("-- Successfully decompiled with NiggaKernel")
+		local v1138 = string.format("-- Successfully decompiled with NiggaKernel\n")
 		if type(v1127) ~= "string" and l_getscripthash_0 then
 			v1138 = v1138 .. ("-- Script hash: %*\n"):format((string.upper(l_getscripthash_0(v1127))));
 		end;
@@ -13986,7 +13986,7 @@ local function v4346(v1127, v1128) --[[ Line: 3102 ]] --[[ Name: decompile_bytec
 			end;
 			v1130:end_benchmark("Smart Naming");
 			v1130:start_benchmark("Global AST To String");
-			local v3943 = ("-- Successfully decompiled with NiggaKernel");
+			local v3943 = ("-- Successfully decompiled with NiggaKernel\n");
 			if type(v1127) ~= "string" and l_getscripthash_0 then
 				v3943 = v3943 .. ("-- Script hash: %*\n"):format((string.upper(l_getscripthash_0(v1127))));
 			end;
